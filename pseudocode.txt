@@ -17,7 +17,7 @@ image:
 Add the text 'Photo by _ on _ (including <a>)', and set background-image
 
 logo:
-Add div
+Add div (inside the div for bakcground-image)
 
 
 form:
@@ -29,9 +29,11 @@ set border for the form
 
 //////
 HTML:
+flexbox contains 2 element: div(left part) and div(right part)
 Left part
+<div class='left-part'> includes all left part elements
 image:
-<div> includes elements below
+<div class='left-part'> 
 
 logo:
 <div>, <img>, <p>

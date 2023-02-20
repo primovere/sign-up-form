@@ -1,0 +1,104 @@
+Does your program have a user interface? What will it look like? What functionality will the interface have?
+Yes, it is a form. There are an image, a logo, some paragraphs, a form, a submit button and hyperlinks.
+It can validate inputs and direct new pages when clicking the links.
+
+What inputs will your program have? Will the user enter data or will you get input from somewhere else?
+text(FIRST NAME, LAST NAME), email, tel(PHONE NUMBER), password(PASSWORD, CONFIRM PASSWORD)
+
+What’s the desired output?
+:focus style, do-not-match style and validation message
+
+Given your inputs, what are the steps necessary to return the desired output?
+
+Design section
+flexbox contains 2 element: div(image) and div(form)
+
+image:
+Add the text 'Photo by _ on _ (including <a>)', and set background-image
+
+logo:
+Add div
+
+
+form:
+Add the <p>, <input>, <button> and hyperlink
+
+2 iputs in a line
+
+set border for the form
+
+//////
+HTML:
+Left part
+image:
+<div> includes elements below
+
+logo:
+<div>, <img>, <p>
+
+credit:
+<p> includes <a>
+
+Right part
+<div class='right-part'> includes all right part elements
+<p>
+
+form:
+<form> includes <fieldset>, <legend>, <input>, <label>
+
+button
+
+<p>, <a>
+
+//////////////
+CSS:
+Left part
+logo:
+div {
+  set div as flexbox container
+  add padding (left and right)
+  change background-color for readability
+  change position
+}
+
+p {
+  change font, text size and color
+}
+
+img {
+  change size
+}
+___
+credit:
+p, a {
+  set size, color and position
+}
+___
+image:
+div {
+  set background-image
+}
+
+
+
+Right part
+
+.right-part {
+  set as a flex box container
+  add padding (top and bottom)
+}
+
+p {
+  change size and font
+}
+
+form:
+form {
+
+} 
+<input>, <label>
+
+button
+<p>, <a>
+
+

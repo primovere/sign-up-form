@@ -11,7 +11,7 @@ What’s the desired output?
 Given your inputs, what are the steps necessary to return the desired output?
 
 Design section
-flexbox contains 2 element: div(image) and div(form)
+flexbox contains 2 element: div(left part) and div(right part)
 
 image:
 Add the text 'Photo by _ on _ (including <a>)', and set background-image
@@ -36,10 +36,10 @@ image:
 <div class='left-part'> 
 
 logo:
-<div>, <img>, <p>
+<div .logo-background>, <div .logo-content>, <img>, <p>
 
 credit:
-<p> includes <a>
+<p .credit> includes <a>
 
 Right part
 <div class='right-part'> includes all right part elements
@@ -55,9 +55,20 @@ button
 //////////////
 CSS:
 Left part
-logo:
+import font
+
+body {
+  set as flexbox container
+  set height as viewport's
+  remove margin
+}
+.left-part {
+  set as a flexbox container
+  set background-image and the image's size
+  flex: 1 (left : right = 1 : 2)
+}
 div {
-  set div as flexbox container
+  set div as a flexbox container
   add padding (left and right)
   change background-color for readability
   change position

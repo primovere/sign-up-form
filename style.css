@@ -103,6 +103,14 @@ input {
 input:focus {
   border: 2px solid blue;
 }
+.error {
+  border: 2px solid red;
+}
+.alert {
+  font-size: 0.6rem;
+  height: 1rem;
+  color: red;
+}
 button {
   background-color: #596D48;
   color: #ffffff;
@@ -111,7 +119,8 @@ button {
   border-radius: 10px;
   border: none;
   padding: 1rem 3.3rem;
-  margin: 1.5rem 0;
+  position: relative;
+  top: 3vh;
 }
 button:hover {
   background-color: #3d631e;

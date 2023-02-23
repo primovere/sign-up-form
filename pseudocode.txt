@@ -115,3 +115,9 @@ button
 <p>, <a>
 
 
+validation
+all required
+first name, last name: letter only
+email
+phone number: number 
+password, confirm password: 8~16 characters

@@ -20,42 +20,42 @@
           <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>Sign up <em>now</em> to get started.</p>
           <p>You <em>know</em> you want to.</p>
         </div>
-        <form class="user-info" action="">
+        <form class="user-info" action="#">
           <p>Let's do this!</p>
           <div class="form-row">
             <div class="form-field">
               <label for="user-first-name">FIRST NAME</label>
-              <input type="text" id="user-first-name" name="first-name" />
+              <input type="text" id="user-first-name" name="first-name" pattern="^[A-Za-z]+$" required />
             </div>
             <div class="form-field">
               <label for="user-last-name">LAST NAME</label>
-              <input type="text" id="user-last-name" name="last-name" />
+              <input type="text" id="user-last-name" name="last-name" pattern="^[A-Za-z]+$" required />
             </div>
           </div>
           <div class="form-row">
             <div class="form-field">
               <label for="user-email">EMAIL</label>
-              <input type="email" id="user-email" name="email" />
+              <input type="email" id="user-email" name="email" pattern="^[A-Za-z\d.+_=-]+@[A-Za-z]+\.[a-z]+$" required />
             </div>
             <div class="form-field">
               <label for="user-phone-number">PHONE NUMBER</label>
-              <input type="tel" id="user-phone-number" name="phone-number" />
+              <input type="tel" id="user-phone-number" name="phone-number" title="I need your number" required/>
             </div>
           </div>
           <div class="form-row">
             <div class="form-field">
               <label for="user-pwd">PASSWORD</label>
-              <input type="password" id="user-pwd" name="pwd" />
+              <input type="password" id="user-pwd" name="pwd" minlength="8" maxlength="16" required />
             </div>
             <div class="form-field">
               <label for="user-confirm-pwd">CONFIRM PASSWORD</label>
-              <input type="password" id="user-confirm-pwd" name="confirm-pwd" />
+              <input type="password" id="user-confirm-pwd" name="confirm-pwd" minlength="8" maxlength="16" required />
             </div>
           </div>
+          <div>
+            <button>Create Account</button>
+          </div>
         </form>
-        <div>
-          <button>Create Account</button>
-        </div>
         <p class="have-account">Already have an account? <a href="">Log in</a></p>
       </div>
   </body>

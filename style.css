@@ -2,6 +2,9 @@
   font-family: "Norse Bold";
   src: url(./font/Norse-Bold.otf);
 }
+:root {
+  --main-font-size: 1.15rem;
+}
 body {
   display: flex;
   height: 100vh;
@@ -53,7 +56,62 @@ body {
 }
 .right-part {
   flex: 2;
+  background-color: #f9fafb;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
-.test {
-  color: white;
+.hero-text {
+  width: 36rem;
+  font-size: var(--main-font-size);
+  font-weight: 700;
+  font-family: Verdana, sans-serif;
+  margin: 4rem 2rem 1.25rem;
+}
+.user-info {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: none;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  height: 12rem;
+  padding: 0.9rem 0;
+}
+.user-info > * {
+  margin: 0.9rem 2rem;
+}
+.user-info > p {
+  font-weight: 700;
+  font-size: var(--main-font-size);
+  margin-top: 0;
+}
+.form-row {
+  display: flex;
+  gap: 2rem;
+  font-size: 0.8rem;
+}
+.form-field {
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+}
+.form-field > input {
+  height: 1.2rem;
+}
+button {
+  background-color: #596D48;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+  padding: 1rem 3.3rem;
+  margin: 1.5rem 1.5rem;
+}
+.have-account {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+  margin: 0 1.5rem;
+}
+.have-account > a {
+  color: #596D48;
 }

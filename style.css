@@ -96,6 +96,12 @@ body {
 }
 input {
   height: 1.2rem;
+  appearance: none;
+  border: 2px solid #E5E7EB;
+  border-radius: 5px;
+}
+input:focus {
+  border: 2px solid blue;
 }
 button {
   background-color: #596D48;
